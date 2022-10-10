@@ -1,0 +1,8 @@
+.navigation li {
+    display: inline;
+    margin: 5px;
+}
+
+.title {
+    margin: 10px 20px;
+}
