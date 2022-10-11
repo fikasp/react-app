@@ -1,16 +1,39 @@
 import React from 'react';
 import './Footer.css';
+import Copyright from '../copyright/Copyright';
 
 function Footer(props) {
+
+    const elements = ["O nas", "Informacje", "Aktualności", `Kontakt: ${props.companyData.email}`]
+    const items = [];
+
+    for (const [index, value] of elements.entries()) {
+        items.push(<li>{index+1} - {value}</li>);
+    }
+
+    let zmienna = true;
+
     return(
         <div>
             <footer>
                 <ul>
-                    <li>Regulamin</li>
-                    <li>FAQ</li>
-                    <li>O nas</li>
-                    <li>Kontakt: {props.companyData.email}</li>
+                    {items}
                 </ul>
+                <ul>
+                    {elements.map((value, index) => <li>{index+1} - {value}</li>)}
+                </ul>
+                
+                <hr/>
+                <Copyright year="2022" />
+                <hr/>
+
+                {zmienna === true &&
+                   <div>Prawda</div>
+                }
+                {zmienna === true
+                   ? <div style={{color: "blue"}}>Prawda</div>
+                   : <div style={{color: "red"}}>Fałsz</div>
+                }
             </footer>
         </div>
     )
