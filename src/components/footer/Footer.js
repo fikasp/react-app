@@ -23,9 +23,7 @@ function Footer(props) {
                     {elements.map((value, index) => <li>{index+1} - {value}</li>)}
                 </ul>
                 
-                <hr/>
                 <Copyright year="2022" />
-                <hr/>
 
                 {zmienna === true &&
                    <div>Prawda</div>
