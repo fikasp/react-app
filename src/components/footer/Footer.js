@@ -1,6 +1,5 @@
 import React from 'react';
 import Copyright from './copyright/Copyright';
-import Copyright from '../copyright/Copyright';
 import './Footer.css';
 
 function Footer(props) {
