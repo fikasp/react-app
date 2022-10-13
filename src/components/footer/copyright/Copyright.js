@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles.module.css'
-import './Copyright.css';
 import './styles.scss';
 
 class Copyright extends React.Component {
