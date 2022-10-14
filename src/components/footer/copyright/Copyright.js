@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css'
-import './styles.scss';
+// import './styles.scss';
 
 class Copyright extends React.Component {
     render() {
